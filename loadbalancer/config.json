@@ -1,0 +1,18 @@
+{
+  "sourcePort": 80,
+  "targetDeactivationDuration": 60000,
+  "sessionExpiry": 30000,
+  "downgradeToUser": null, 
+  "stickiness": false,
+  "balancerControllerPath": null,
+  "targets": [
+    {
+      "host": "localhost",
+      "port": 3000
+    },
+    {
+      "host": "localhost",
+      "port": 3001
+    }
+  ]
+}

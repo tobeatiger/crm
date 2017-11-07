@@ -1,0 +1,1 @@
+loadbalancer start --config config_stick.json

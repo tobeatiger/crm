@@ -1,0 +1,1 @@
+loadbalancer start --config config.json
