@@ -1,0 +1,10 @@
+<!-- ko foreach: fields -->
+<div class="formFieldBlock no-margin-left" data-bind="css:$data.blockCss">
+    <div class="formFieldName no-margin" data-bind="css:$data.fieldLabelCss">
+        <span data-bind="text:$data.fieldDesc,attr:{title:$data.fieldDesc}"></span>
+    </div>
+    <div class="formField no-margin" data-bind="css:$data.fieldGridAllc,attr:{'data-row-span':$data._rowSpan || 1}">
+        <div data-bind="hxxFormField:$data" style="height:100%;"></div>
+    </div>
+</div>
+<!-- /ko -->

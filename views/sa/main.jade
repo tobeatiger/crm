@@ -1,0 +1,7 @@
+extends ../base/layout
+
+block append head
+    script(src='/js/lib/require.js', data-main='/js/lib/sa/main')
+
+block content
+    h4(class='pageTitle') #{title}

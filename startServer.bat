@@ -1,0 +1,1 @@
+set DEBUG=crm:* & npm start

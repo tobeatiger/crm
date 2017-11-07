@@ -1,0 +1,15 @@
+extends ../base/layout
+
+block append head
+    script(src='/js/lib/require/require.js', data-main='/js/lib/crm/ip')
+
+block content
+    h4(class='pageTitle') #{title}
+    .contentBlock(id='ip_content',data-context='#{context}',data-action='#{action}')
+        form(id='ip_top_form')
+            .topInfoContainer
+        .detailInfoContainer
+    .footer(id='ip_footer')
+        .btn-group
+            button(id='btn_submit',type='button',class='btn btn-success')
+                |Submit

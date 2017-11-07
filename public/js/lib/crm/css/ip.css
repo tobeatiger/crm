@@ -1,0 +1,30 @@
+#ip_content {
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  padding: 10px;
+}
+#ip_content .topInfoContainer {
+  padding-left: 15px;
+}
+#ip_content .topInfoContainer > .formFieldBlock > span {
+  font-weight: bold;
+}
+#ip_content .mainInfoBlock {
+  padding-left: 15px;
+}
+#ip_content .hxx-tab-content .hxx-tab-pane {
+  height: 350px;
+  overflow-y: auto;
+}
+#ip_content .accordionContent.tableContainer {
+  margin-right: 16px;
+}
+#ip_footer {
+  padding-top: 8px;
+}
+#ip_footer .btn-group {
+  float: right;
+}
+#ip_footer #btn_submit {
+  width: 90px;
+}

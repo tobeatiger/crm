@@ -1,0 +1,73 @@
+@maxRowSpan: 25;
+.genRowSpanCss(@i:1) when (@i =< @maxRowSpan) {
+    &[data-row-span='@{i}'] {
+        height: calc(@formFieldHeight * @i + @formFieldPaddingBottom * (@i - 1));
+        line-height: calc(@formFieldHeight * @i + @formFieldPaddingBottom * (@i - 1));
+    }
+    .genRowSpanCss(@i+1);
+}
+
+.formFieldBlock {
+    padding-bottom: @formFieldPaddingBottom;
+}
+
+.formField {
+    .genRowSpanCss();
+    border-radius: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: @formFieldHeight;
+    line-height: @formFieldHeight;
+    input {
+        margin: 0;
+        &.input-sm {
+            height: @formFieldHeight;
+            line-height: @formFieldHeight;
+            padding: 2px 7px;
+            font-size: 14px;
+        }
+    }
+    button.hxx-btn-input {
+        width: 100%;
+    }
+    textarea {
+        height:100%;
+        width:100%;
+        line-height: @formFieldHeight;
+        border-color: #ccc;
+        resize: none;
+        &.input-sm {
+            padding: 2px 7px;
+            font-size: 14px;
+        }
+    }
+    &.ui-state-highlight {
+        input[type='radio']:nth-of-type(1) {
+            margin-left: 5px;
+        }
+    }
+}
+.formFieldName {
+    display: inline-block;
+    height: @formFieldHeight;
+    line-height: @formFieldHeight;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &.mandatory:after {
+        position: absolute;
+        content: "*";
+        color: red;
+        top: 3px;
+        right: 2px;
+    }
+}
+.radioLabel {
+    display: inline-block;
+    line-height: @formFieldHeight;
+    height: @formFieldHeight;
+    vertical-align: top;
+    min-width: 34px;
+    padding-left: 2px;
+    padding-right: 5px;
+}

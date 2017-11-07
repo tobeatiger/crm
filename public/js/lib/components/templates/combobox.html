@@ -1,0 +1,14 @@
+<div class="hxx-input-group hxx-dropdown input-group">
+    <input type="text" class="hxx-dropdown-display-input form-control input-sm" data-bind="attr:{value:$data.text,readonly:$data.readonly,disabled:$data.disabled}"/>
+    <input type="text" class="hxx-dropdown-input" style="display:none" data-bind="attr:{name:$data.fieldName,readonly:$data.readonly,disabled:$data.disabled},hxxData:{'rules':$data.rules},value:$data.value"/>
+    <div class="input-group-btn">
+        <button type="button" class="hxx-btn btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bind="css:{disabled:$data.disabled||$data.readonly}">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu hxx-dropdown-menu dropdown-menu-right" data-bind="foreach:$data.options">
+            <li>
+                <a href="#" data-bind="text:$data.text,attr:{'data-value':$data.value}"></a>
+            </li>
+        </ul>
+    </div>
+</div>

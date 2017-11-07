@@ -1,0 +1,51 @@
+.hxx-table {
+    &.table {
+        margin-bottom: 8px;
+        border-bottom: 1px solid #ddd;
+        >tbody>tr>td,>tbody>tr>th,>thead>tr>td,>thead>tr>th {
+            padding: 6px 8px;
+            line-height: 25px;
+        }
+        .glyphicon-remove {
+            cursor: pointer;
+            color: #aaa;
+            top: 2px;
+        }
+        .glyphicon-remove:hover {
+            color: black;
+        }
+    }
+    th.mandatory:after {
+        content: '*';
+        color: red;
+        top: 3px;
+        left: 6px;
+        position: relative;
+    }
+    tr.hxx-table-row {
+        &.selected {
+            background-color: #DEEAF5;
+        }
+    }
+}
+.hxx-table-btn-group {
+    text-align: right;
+    span.glyphicon {
+        font-size: 16px;
+        padding-top: 3px;
+    }
+    button {
+        width: 60px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        &.btnMoveDown {
+            margin-right:15px;
+            padding-top:2px;
+            padding-bottom:0;
+        }
+        &.btnMoveUp {
+            padding-top:2px;
+            padding-bottom:0;
+        }
+    }
+}

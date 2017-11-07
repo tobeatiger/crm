@@ -1,0 +1,37 @@
+.formFieldBlock {
+  padding-bottom: 10px;
+}
+.formFieldBlock .formField {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+}
+.formFieldBlock .formField input {
+  margin: 0;
+}
+.formFieldBlock .formField input.input-sm {
+  height: 25px;
+  line-height: 25px;
+  padding: 2px 7px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.formFieldBlock .formFieldName {
+  height: 25px;
+  line-height: 25px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.formFieldBlock .radioLabel {
+  display: inline-block;
+  line-height: 25px;
+  height: 25px;
+  font-size: 12px;
+  vertical-align: top;
+  min-width: 34px;
+  padding-left: 2px;
+  padding-right: 5px;
+}

@@ -1,0 +1,24 @@
+<div class="panel-group hxx-panel-group" role="tablist" aria-multiselectable="true"
+    data-bind="attr:{id:$root.context+'_accordion'},foreach:$root.items">
+    <div class="panel hxx-panel panel-default">
+        <div class="panel-heading hxx-panel-heading" role="tab"
+            data-bind="attr:{id:$root.context+'_'+$data.id+'_heading'}">
+            <h4 class="panel-title hxx-panel-title">
+                <a role="button" data-toggle="collapse"
+                    data-bind="attr:{href:'#'+$root.context+'_'+$data.id+'_collapse',
+                      'aria-controls':$root.context+'_'+$data.id+'_collapse',
+                      'data-parent':'#'+$root.context+'_accordion',
+                      'aria-expanded':$index()==0?'true':'false'},
+                      text:$data.title">
+                </a>
+            </h4>
+        </div>
+        <div class="panel-collapse hxx-panel-collapse hxx-collapse collapse" role="tabpanel"
+            data-bind="attr:{'aria-labelledby':$root.context+'_'+$data.id+'_heading',
+              id:$root.context+'_'+$data.id+'_collapse'},
+              css:{in:$index()==0}">
+            <div class="panel-body hxx-panel-body" data-bind="html:$data.template">
+            </div>
+        </div>
+    </div>
+</div>

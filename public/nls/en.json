@@ -1,0 +1,6 @@
+{
+    "welcome":"Welcome to HXX-CRM",
+    "client_status_code":{"PA":"Pending Approval","AC":"Active"},   
+    "profile_type_code":{"IP":"Individual Profile","BP":"Business Profile","AP":"Account Profile"},
+    "profile_type_code_seq":["IP","BP","AP"]
+}

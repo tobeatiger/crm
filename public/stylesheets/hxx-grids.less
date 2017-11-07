@@ -1,0 +1,55 @@
+@colCount:12;
+@marginSize:16px;
+@adjustment: 3px;
+
+.gen-grid(@widthOnly,@i:1) when (@i =< @colCount) {
+    @percent : (@i / @colCount * 100);
+    .hxx-@{widthOnly}grid-@{i} {
+        width: calc(~"@{percent}%" - (2 * @marginSize + @adjustment));
+        &.no-margin {
+            width: calc(~"@{percent}%" - @adjustment);
+        }
+        &.no-margin-left, &.no-margin-right {
+            width: calc(~"@{percent}%" - (@marginSize + @adjustment));
+        }
+    }
+    .gen-grid(@widthOnly, @i+1);
+}
+
+[class^="hxx-grid-"], [class*=" hxx-grid-"] {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 0 @marginSize;
+    &.no-margin {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &.no-margin-left {
+        margin-left: 0;
+    }
+    &.no-margin-right {
+        margin-right: 0;
+    }
+}
+
+[class^="hxx-wo-grid-"], [class*=" hxx-wo-grid-"] {
+    &.no-margin {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &.no-margin-left {
+        margin-left: 0;
+    }
+    &.no-margin-right {
+        margin-right: 0;
+    }
+}
+
+.hxx-grid-0,.hxx-wo-grid-0 {
+    display: none;
+}
+
+.gen-grid(~"");
+.gen-grid(~"wo-");

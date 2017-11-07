@@ -1,0 +1,13 @@
+<ul class="nav nav-tabs hxx-nav-tabs" data-bind="foreach: $root.tabs">
+    <li role="presentation">
+        <a data-bind="text:$data.title, attr:{href:'#'+$root.context+'_'+$data.id},
+        click: $root.clickTab">
+        </a>
+    </li>
+</ul>
+<div class="tab-content hxx-tab-content" data-bind="foreach: $root.tabs">
+    <div role="tabpanel" data-bind="html:$data.template,
+        attr:{id:$root.context+'_'+$data.id},
+        style:{'min-height':$root.paneHeight}" class="tab-pane hxx-tab-pane">
+    </div>
+</div>

@@ -1,0 +1,24 @@
+{   
+    "welcome":"欢迎使用HXX-CRM",    
+    "Context":"环境",
+    "Current Date":"日期",
+    "KYC Search":"KYC 查找",
+    "KYC Approval":"KYC 审批",
+    "KYC Visitation":"KYC 回访",
+    "Search All":"查找",
+    "Profile Type":"信息类型",
+    "Individual Profile":"个人信息",
+    "Business Profile":"商业信息",
+    "Account Profile":"账户信息",
+    "Client Name":"客户名称",
+    "Search":"查找",
+    "Create":"创建",
+    "Tax ID":"纳税ID",
+    "Birth Date":"出生日期",
+    "Client Status":"客户状态",
+    "Edit":"修改",
+    "client_status_code":{"PA":"待审核","AC":"活跃"},   
+    "profile_type_code":{"IP":"个人信息","BP":"商业信息","AP":"账户信息"},
+    "profile_type_code_seq":["IP","BP","AP"]
+    
+}

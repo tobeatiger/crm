@@ -1,0 +1,11 @@
+extends layout
+
+block append head
+    script(src='/js/lib/require/require.js',data-main='/js/lib/crm/login')
+    link(rel='stylesheet', href='/stylesheets/login.css')
+
+block content
+    #container
+        h3(id='title') 
+        .loginForm
+        #message(style="color:red")

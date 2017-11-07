@@ -1,0 +1,293 @@
+.hxx-table.table {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.hxx-table.table > tbody > tr > td,
+.hxx-table.table > tbody > tr > th,
+.hxx-table.table > thead > tr > td,
+.hxx-table.table > thead > tr > th {
+  padding: 6px 8px;
+  line-height: 25px;
+}
+.hxx-table.table .glyphicon-remove {
+  cursor: pointer;
+  color: #aaa;
+  top: 2px;
+}
+.hxx-table.table .glyphicon-remove:hover {
+  color: black;
+}
+.hxx-table th.mandatory:after {
+  content: '*';
+  color: red;
+  top: 3px;
+  left: 6px;
+  position: relative;
+}
+.hxx-table tr.hxx-table-row.selected {
+  background-color: #DEEAF5;
+}
+.hxx-table-btn-group {
+  text-align: right;
+}
+.hxx-table-btn-group span.glyphicon {
+  font-size: 16px;
+  padding-top: 3px;
+}
+.hxx-table-btn-group button {
+  width: 60px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.hxx-table-btn-group button.btnMoveDown {
+  margin-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 0;
+}
+.hxx-table-btn-group button.btnMoveUp {
+  padding-top: 2px;
+  padding-bottom: 0;
+}
+.hxx-dropdown-menu.dropdown-menu {
+  min-width: 30px;
+}
+.hxx-btn.btn {
+  line-height: 11px;
+  padding: 6px 8px;
+}
+.hxx-tabs .hxx-tab-pane {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+.hxx-tabs .hxx-nav-tabs.nav-tabs > li a {
+  line-height: 12px;
+}
+.hxx-tabs .hxx-nav-tabs.nav-tabs > li:not(.active) a {
+  border: 1px solid #ddd;
+}
+.hxx-panel-heading.panel-heading {
+  padding: 5px 15px;
+}
+.hxx-panel-body.panel-body {
+  padding-right: 0;
+}
+.formFieldBlock {
+  padding-bottom: 10px;
+}
+.formField {
+  border-radius: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  height: 25px;
+  line-height: 25px;
+}
+.formField[data-row-span='1'] {
+  height: calc(25px);
+  line-height: calc(25px);
+}
+.formField[data-row-span='2'] {
+  height: calc(60px);
+  line-height: calc(60px);
+}
+.formField[data-row-span='3'] {
+  height: calc(95px);
+  line-height: calc(95px);
+}
+.formField[data-row-span='4'] {
+  height: calc(130px);
+  line-height: calc(130px);
+}
+.formField[data-row-span='5'] {
+  height: calc(165px);
+  line-height: calc(165px);
+}
+.formField[data-row-span='6'] {
+  height: calc(200px);
+  line-height: calc(200px);
+}
+.formField[data-row-span='7'] {
+  height: calc(235px);
+  line-height: calc(235px);
+}
+.formField[data-row-span='8'] {
+  height: calc(270px);
+  line-height: calc(270px);
+}
+.formField[data-row-span='9'] {
+  height: calc(305px);
+  line-height: calc(305px);
+}
+.formField[data-row-span='10'] {
+  height: calc(340px);
+  line-height: calc(340px);
+}
+.formField[data-row-span='11'] {
+  height: calc(375px);
+  line-height: calc(375px);
+}
+.formField[data-row-span='12'] {
+  height: calc(410px);
+  line-height: calc(410px);
+}
+.formField[data-row-span='13'] {
+  height: calc(445px);
+  line-height: calc(445px);
+}
+.formField[data-row-span='14'] {
+  height: calc(480px);
+  line-height: calc(480px);
+}
+.formField[data-row-span='15'] {
+  height: calc(515px);
+  line-height: calc(515px);
+}
+.formField[data-row-span='16'] {
+  height: calc(550px);
+  line-height: calc(550px);
+}
+.formField[data-row-span='17'] {
+  height: calc(585px);
+  line-height: calc(585px);
+}
+.formField[data-row-span='18'] {
+  height: calc(620px);
+  line-height: calc(620px);
+}
+.formField[data-row-span='19'] {
+  height: calc(655px);
+  line-height: calc(655px);
+}
+.formField[data-row-span='20'] {
+  height: calc(690px);
+  line-height: calc(690px);
+}
+.formField[data-row-span='21'] {
+  height: calc(725px);
+  line-height: calc(725px);
+}
+.formField[data-row-span='22'] {
+  height: calc(760px);
+  line-height: calc(760px);
+}
+.formField[data-row-span='23'] {
+  height: calc(795px);
+  line-height: calc(795px);
+}
+.formField[data-row-span='24'] {
+  height: calc(830px);
+  line-height: calc(830px);
+}
+.formField[data-row-span='25'] {
+  height: calc(865px);
+  line-height: calc(865px);
+}
+.formField input {
+  margin: 0;
+}
+.formField input.input-sm {
+  height: 25px;
+  line-height: 25px;
+  padding: 2px 7px;
+  font-size: 14px;
+}
+.formField button.hxx-btn-input {
+  width: 100%;
+}
+.formField textarea {
+  height: 100%;
+  width: 100%;
+  line-height: 25px;
+  border-color: #ccc;
+  resize: none;
+}
+.formField textarea.input-sm {
+  padding: 2px 7px;
+  font-size: 14px;
+}
+.formField.ui-state-highlight input[type='radio']:nth-of-type(1) {
+  margin-left: 5px;
+}
+.formFieldName {
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.formFieldName.mandatory:after {
+  position: absolute;
+  content: "*";
+  color: red;
+  top: 3px;
+  right: 2px;
+}
+.radioLabel {
+  display: inline-block;
+  line-height: 25px;
+  height: 25px;
+  vertical-align: top;
+  min-width: 34px;
+  padding-left: 2px;
+  padding-right: 5px;
+}
+.ui-tooltip,
+.arrow:after {
+  background: #fff;
+  border: 2px solid red;
+}
+.ui-tooltip.borderRed,
+.arrow:after.borderRed {
+  border-color: red;
+}
+.ui-tooltip.borderBlue,
+.arrow:after.borderBlue {
+  border-color: blue;
+}
+.ui-tooltip.borderBlack,
+.arrow:after.borderBlack {
+  border-color: black;
+}
+.ui-tooltip {
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 7px black;
+}
+.ui-tooltip .arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+.ui-tooltip .arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px #000000;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.ui-tooltip .arrow.top {
+  top: -16px;
+  bottom: auto;
+}
+.ui-tooltip .arrow.top:after {
+  bottom: -20px;
+  top: auto;
+}
+.ui-tooltip .arrow.left {
+  left: 20%;
+}
+.ui-tooltip .arrow.right {
+  left: 80%;
+}

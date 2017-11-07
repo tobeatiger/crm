@@ -1,0 +1,19 @@
+extends layout
+
+block append head
+    script(src='/js/lib/require/require.js', data-main='/js/lib/crm/main')
+
+block content
+    <!--h3 #{message} #{expires}-->
+    if (user)
+        div.pageTitle Welcome to #{title}: &#160;
+            span #{user.name}
+    else
+        div.pageTitle Welcome to #{title}: &#160;
+            span Please&#160;
+            a(href='/Login') Login
+            span.pageTitle ...
+    div.menu
+        a(href='/ip') Individual Client Profile
+    div.menu
+        a(href='/bp') Business Client Profile

@@ -1,0 +1,23 @@
+block content
+    .kyc_search_form
+        .hxx-grid-1
+            label #{i18n.__('Profile Type')}:
+        .hxx-grid-2 
+            select(name='profileType' class="form-control")
+                - var mapping = i18n.__('profile_type_code'),seq = i18n.__('profile_type_code_seq');
+                - for(var i = 0; i < seq.length; i++){
+                option(value="#{seq[i]}") #{mapping[seq[i]]}
+                -}    
+        .hxx-grid-9
+        
+        .hxx-grid-1(style='margin-top:0.2em') 
+            label #{i18n.__('Client Name')}:                
+        .hxx-grid-2(style='margin-top:0.2em') 
+            input(name="clientName" class="form-control" value="Pao")
+        .hxx-grid-9
+        
+    #kyc_search_btn(style='margin-top:0.5em')
+        a(class="btn btn-sm btn-primary kyc_btn kyc_search_btn" target='#') #{i18n.__('Search')}
+        a(class="btn btn-sm btn-danger kyc_btn kyc_create_btn" target='#') #{i18n.__('Create')}
+        
+    #kyc_search_results(style='margin-top:2em')

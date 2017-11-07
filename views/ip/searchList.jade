@@ -1,0 +1,21 @@
+block content     
+    table(class='table' style='min-width:50em;width:50%') 
+        tr
+            th
+            th #{i18n.__('Client Name')}
+            th #{i18n.__('Tax ID')}
+            th #{i18n.__('Birth Date')}
+            th #{i18n.__('Client Status')}
+            th  
+        - for (var i = 0; i < clients.length; i++){    
+        tr
+            
+            td                 
+            td
+                a(href='/ip/enquire/#{clients[i].clientId}' class='kyc_enquire_link', target='#') #{clients[i].clientName}
+            td #{clients[i].cin}            
+            td #{clients[i].birthdate}           
+            td #{i18n.__('client_status_code')[clients[i].clientStatus]}
+            td
+               a(class="btn btn-sm btn-primary kyc_btn kyc_edit_btn" href='/ip/update/#{clients[i].clientId}' target='#') #{i18n.__('Edit')}
+        - }

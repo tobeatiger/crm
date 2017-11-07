@@ -1,0 +1,50 @@
+.hxx-table.table {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.hxx-table.table > tbody > tr > td,
+.hxx-table.table > tbody > tr > th,
+.hxx-table.table > thead > tr > td,
+.hxx-table.table > thead > tr > th {
+  padding: 6px 8px;
+  line-height: 25px;
+}
+.hxx-table.table .glyphicon-remove {
+  cursor: pointer;
+  color: #aaa;
+  top: 2px;
+}
+.hxx-table.table .glyphicon-remove:hover {
+  color: black;
+}
+.hxx-table th.mandatory:after {
+  content: '*';
+  color: red;
+  top: 3px;
+  left: 6px;
+  position: relative;
+}
+.hxx-table tr.hxx-table-row.selected {
+  background-color: #DEEAF5;
+}
+.hxx-table-btn-group {
+  text-align: right;
+}
+.hxx-table-btn-group span.glyphicon {
+  font-size: 16px;
+  padding-top: 3px;
+}
+.hxx-table-btn-group button {
+  width: 60px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.hxx-table-btn-group button.btnMoveDown {
+  margin-right: 15px;
+  padding-top: 2px;
+  padding-bottom: 0;
+}
+.hxx-table-btn-group button.btnMoveUp {
+  padding-top: 2px;
+  padding-bottom: 0;
+}

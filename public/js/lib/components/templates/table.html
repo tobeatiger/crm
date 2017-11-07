@@ -1,0 +1,49 @@
+<table class="table hxx-table table-striped table-hover">
+    <thead class="hxx-table-thead">
+        <tr>
+            <!-- ko if: $root.hasSelectCol -->
+            <th style="width:30px">
+                <input type="checkbox" title="Select All" class="hxx-table-select-all">
+            </th>
+            <!-- /ko -->
+            <!-- ko foreach: $root.columns -->
+            <th data-bind="text:$data.title,style:{'width':$data.width},attr:{title:($data.tips || $data.title)},
+                css:{'mandatory':$data.hxxFormField && $data.hxxFormField.rules && $data.hxxFormField.rules.required}"></th>
+            <!-- /ko -->
+            <!-- ko if: $root.hasDeleteCol -->
+            <th style="width:30px"></th>
+            <!-- /ko -->
+        </tr>
+    </thead>
+    <tbody class="hxx-table-tbody">
+        <!-- ko foreach: $root._koRows -->
+        <tr class="hxx-table-row" data-bind="click:$root._clickRow,attr:{'data-index':$index},hxxData:{'rowData':$data}">
+            <!-- ko if: $root.hasSelectCol -->
+            <td style="width:30px">
+                <input type="checkbox" class="hxx-table-select"/>
+            </td>
+            <!-- /ko -->
+            <td class="hxx-td-place-holder"></td>
+            <!-- ko if: $root.hasDeleteCol -->
+            <td style="width:30px">
+                <i class="glyphicon glyphicon-remove" data-bind="click:$root._removeRow"></i>
+            </td>
+            <!-- /ko -->
+        </tr>
+        <!-- /ko -->
+    </tbody>
+</table>
+<div class="hxx-table-btn-group" data-bind="if:$root.hasEditButtons">
+    <button type="button" class="btn btn-default btn-sm btnMoveUp">
+        <span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-sm btnMoveDown">
+        <span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-sm btnInsert">
+        <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-sm btnAdd">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    </button>
+</div>

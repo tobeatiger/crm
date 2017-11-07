@@ -1,0 +1,22 @@
+.banner{
+    padding:0.5em 0;
+    margin-bottom:0.5em;
+    height:2em;    
+    background-color:#f5f5f5;
+    border-radius: 4px;
+}
+.menubar{
+    text-align:left;
+    padding:0.5em 0;
+    margin-bottom:1em;
+    height:2em;    
+    background-color:#f5f5f5;
+}
+.menuitem_active{
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+.kyc_btn{
+    margin-right:5px;
+}
